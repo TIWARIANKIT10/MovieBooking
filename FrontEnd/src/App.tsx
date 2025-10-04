@@ -26,14 +26,14 @@ const router = createBrowserRouter(
       {/* Movies */}
       <Route path="movies" element={<Movies />} />
       <Route path="movies/:id" element={<MoviesDetails />} />
-      <Route path="movies/:id/:date" element={<MyBookings />} />
+      <Route path="movies/:id/:date" element={<SeatLayout />} />
 
       {/* Theaters & Favorites */}
       <Route path="theaters" element={<Theater />} />
       <Route path="favorites" element={<Favorite />} />
 
       {/* My Bookings */}
-      <Route path="my-bookings" element={<SeatLayout />} />
+      <Route path="my-bookings" element={<MyBookings />} />
 
       {/* Optional redirect for old capitalized paths */}
       <Route path="Releases" element={<Releases/>} />
